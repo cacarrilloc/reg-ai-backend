@@ -1,0 +1,16 @@
+import os
+
+os.environ['ENVIRONMENT'] = 'test'
+os.environ['AUTH_BYPASS_ENABLED'] = 'true'
+os.environ['CLERK_ISSUER'] = ''
+os.environ['CLERK_JWKS_URL'] = ''
+os.environ['CLERK_AUDIENCE'] = ''
+os.environ['CLERK_AUTHORIZED_PARTIES'] = ''
+os.environ['DATABASE_URL'] = ''
+os.environ['ANTHROPIC_API_KEY'] = ''
+os.environ['OPENAI_API_KEY'] = ''
+os.environ['INNGEST_EVENT_KEY'] = ''
+os.environ['INNGEST_SIGNING_KEY'] = ''
+os.environ['SENTRY_DSN'] = ''
+os.environ['LANGFUSE_PUBLIC_KEY'] = ''
+os.environ['LANGFUSE_SECRET_KEY'] = ''
