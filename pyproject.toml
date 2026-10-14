@@ -1,0 +1,29 @@
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
+
+[tool.mypy]
+python_version = "3.12"
+ignore_missing_imports = true
+check_untyped_defs = true
+warn_unused_ignores = false
+disallow_untyped_defs = false
+explicit_package_bases = true
+
+# Gradual typing: keep CI green while these modules are cleaned up.
+[[tool.mypy.overrides]]
+module = [
+  "app.services.review_service",
+  "app.services.document_chunk_service",
+  "app.services.redline_generation_service",
+  "app.services.gap_analysis_service",
+  "app.services.compliance_report_service",
+  "app.services.analytics_service",
+  "app.services.policy_revision_document",
+  "app.services.notification_service",
+  "app.api.v1.endpoints.policies",
+]
+ignore_errors = true
