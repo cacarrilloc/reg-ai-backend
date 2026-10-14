@@ -1,0 +1,16 @@
+Subject: Confirm your email for Reg-AI
+
+Paste into Supabase Dashboard → Authentication → Email Templates → Confirm signup.
+
+Use the HTML in confirm-signup.html for Body (source / HTML mode).
+
+Required variables used:
+  {{ .ConfirmationURL }}
+  {{ .Email }}
+
+Also set for this project (Authentication → URL Configuration):
+  Site URL = your app origin (local: http://localhost:3000)
+  Redirect URLs include http://localhost:3000/auth/callback (and prod/preview hosts)
+
+Apply on every Supabase project/branch that sends confirm emails
+(local/dev branch, staging, production).
