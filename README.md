@@ -4,6 +4,8 @@ Python FastAPI backend scaffold for the Reg-AI Policy Change Agent V1.
 
 This service is intentionally built as a **modular monolith**: one deployable FastAPI app with clean internal modules for auth, organizations, policies, ingestion, regulatory monitoring, RAG, gap analysis, redline generation, review workflow, audit logging, notifications, and background jobs.
 
+<img width="812" height="595" alt="reg-ai-diagram" src="https://github.com/user-attachments/assets/6fbbf743-573b-4ff7-af24-118f7220b188" />
+
 ## Quick start
 
 ```bash
