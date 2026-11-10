@@ -173,13 +173,9 @@ Flagged changes are committed before a `business_change.flagged` outbox row is c
 
 # Backend Architecture Review
 
-Access the repository through the connected GitHub integration and reviewed their directory structures, dependency declarations, authentication code, API communication, database tenancy, regulatory workflows, AI integration, review logic, and testing organization.
+Connected through GitHub integration and reviewed their directory structures, dependency declarations, authentication code, API communication, database tenancy, regulatory workflows, AI integration, review logic, and testing organization.
 
-[reg-ai-backend](https://github.com/cacarrilloc/reg-ai-backend?utm_source=chatgpt.com)
-
-main
-
-Overall assessment: Reg-AI has evolved beyond a basic compliance chatbot into a substantial, multi-tenant regulatory compliance platform. Its architecture combines regulatory ingestion, retrieval-augmented analysis, AI-generated policy revisions, human approval workflows, marketing compliance review, and auditability.
+**Overall assessment:** Reg-AI has evolved beyond a basic compliance chatbot into a substantial, multi-tenant regulatory compliance platform. Its architecture combines regulatory ingestion, retrieval-augmented analysis, AI-generated policy revisions, human approval workflows, marketing compliance review, and auditability.
 
 This is a source-code architecture review, not a completed runtime or penetration test. I inspected representative critical implementations and the repository inventories, but did not execute the full test suites or verify production configuration.
 
